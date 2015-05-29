@@ -4,6 +4,6 @@
     "keep_login": true,
     "pushbullet_key": "",
     "minutes": [
-        0, 30, 50
+        0, 30
     ]
 }
