@@ -1,0 +1,21 @@
+{
+    "name": "proxer-push",
+    "version": "1.0.0",
+    "description": "Sends push notifications of new animes on proxer via pushbullet.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "author": "kumpelblase2",
+    "license": "MIT",
+    "dependencies": {
+        "bluebird": "^2.9.26",
+        "cheerio": "^0.19.0",
+        "lodash": "^3.9.3",
+        "node-schedule": "^0.2.7",
+        "pushbullet": "^1.4.3",
+        "request": "^2.56.0",
+        "tough-cookie": "^1.2.0",
+        "tough-cookie-filestore": "0.0.1"
+    }
+}
