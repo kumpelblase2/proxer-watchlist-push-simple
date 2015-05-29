@@ -1,11 +1,14 @@
-# Proxer Watchlist Push
+# Proxer Watchlist Push, the simple version
 Send a push notification via pushbullet once a new EP of an anime on your watchlist is available. The application checks (by default) every 30min if a new one is available, so it is not instant.
 You can, if you want to, specify the time at which the application should check in the config (see below).
 
-## Limitations
-Since proxer.me does not provide an API, this applications uses PhantomJS to view the page and interact with it, hence the dependency. The application also requires you to specifiy the username and password of the user you want to get notifications for. Again, proxer.me does not provide an API so this application has to it the same way a human would do. However, the application tries to not needing to login every time and thus stores the cookie provided by the server and will use that instead for following requests. The cookies are stored in the `cookies.json` file if you want to take a look.
+## Simple version?
+The reason being that this version does not require PhantomJS like the other version does. This makes it inherently more simple as it's one less thing a user would need to install in order for him to use it. However, this comes with its own problems. One of those things being that here we don't actually have a proper browser, meaning that cloudflare is really likely to identify this and block it. If you want to still use this system, but aren't afraid to use something a bit more complicated setup, please take a look at the ['harder' version](https://github.com/kumpelblase2/proxer-watchlist-push).
 
-Lastly, CloudFlare protection. I have yet to see if the application handles this properly in all cases, but so far, I have not encountered an issue with this.
+## Limitations
+Since proxer.me does not provide an API (at least not yet), this applications parses HTML directly and thus might break if the site design/layout changes. The application also requires you to specifiy the username and password of the user you want to get notifications for. Again, proxer.me does not provide an API so this application has to it the same way a human would do. However, the application tries to not needing to login every time and thus stores the cookie provided by the server and will use that instead for following requests. The cookies are stored in the `cookies.json` file if you want to take a look.
+
+Lastly, CloudFlare protection. As mentioned above, you will probably encounter problems here. I might be proven wrong, but I just don't want to get peoples hopes up, with this version.
 
 ## Configuration
 The configuration can be found in the `config.js` file at the root directory.
