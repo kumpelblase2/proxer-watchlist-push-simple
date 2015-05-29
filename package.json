@@ -6,6 +6,7 @@
     "scripts": {
         "start": "node index.js"
     },
+    "repository": "https://github.com/kumpelblase2/proxer-watchlist-push-simple",
     "author": "kumpelblase2",
     "license": "MIT",
     "dependencies": {
